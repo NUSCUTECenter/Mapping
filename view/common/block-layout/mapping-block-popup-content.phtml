@@ -8,8 +8,10 @@ $media = $marker->media();
 <?php if ($media): ?>
 <img src="<?php echo $this->escapeHtml($media->thumbnailUrl('medium')); ?>">
 <?php endif; ?>
+
+<!-- modules/Mapping/view/common/block-layout/mappling-block-popup-content.phtml -->
 <div>
-    <?php echo sprintf($this->translate('Item: %s'), $item->link($item->displayTitle(), null, ['target' => '_blank'])); ?>
+    <?php echo sprintf($this->translate('View Location: %s'), $item->link($item->displayTitle(), null, ['target' => '_blank'])); ?>
 </div>
 <?php if ($media): ?>
 <div>
