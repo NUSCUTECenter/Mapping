@@ -11,7 +11,8 @@ $media = $marker->media();
 
 <!-- modules/Mapping/view/common/block-layout/mappling-block-popup-content.phtml -->
 <div>
-    <?php echo sprintf($this->translate('View Location: %s'), $item->link($item->displayTitle(), null, ['target' => '_blank'])); ?>
+    <!--<?php echo sprintf($this->translate('View Location: %s'), $item->link($item->displayTitle(), null, ['target' => '_blank'])); ?>-->
+    <?php echo sprintf($this->translate('View Location: %s'), $item->link($item->displayTitle(), null)); ?>
 </div>
 <?php if ($media): ?>
 <div>
